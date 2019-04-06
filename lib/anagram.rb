@@ -11,6 +11,9 @@ class Anagram
 
 #given a word & array of possible anagrams, selects the correct ones
   def match (possible_anagrams)
+    possible_anagrams.select do |w|
+      w.split("").sort == word.split("").sort
+    end
     binding.pry
   end
 
