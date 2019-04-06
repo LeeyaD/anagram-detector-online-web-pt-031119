@@ -1,4 +1,3 @@
-#given a word & array of possible anagrams, selects the correct ones
 #class instances should respond to #match, which takes an array of possible anagrams
 #all matches should be returned in an array
 #if no matches exist, an empty array should be returned
@@ -10,8 +9,9 @@ class Anagram
     @word = word
   end
 
-  def match (matches)
-
+#given a word & array of possible anagrams, selects the correct ones
+  def match (possible_anagrams)
+    binding.pry
   end
 
 end
